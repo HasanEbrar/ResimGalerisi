@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Galerisi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+        <style>
+            .gallery-img {
+              cursor: pointer;
+              transition: transform 0.2s;
+            }
+            .gallery-img:hover {
+              transform: scale(1.05);
+            }
+          </style>
+</head>
+<body>
+    
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Resim Galerisi</h2>
+        <div class="row g-3">
+      
+          <!-- Galeri resimleri -->
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/200/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 1">
+          </div>
+      
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/201/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 2">
+          </div>
+      
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/202/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 3">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/203/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 4">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/204/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 5">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/215/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 6">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/206/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 7">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/216/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 8">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/208/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 9">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/209/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 10">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/210/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 11">
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <img src="https://picsum.photos/id/211/600" class="img-fluid gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://picsum.photos/id/200/600" alt="Resim 12">
+          </div>
+      
+          <!-- İstediğin kadar <div class="col"> ekleyebilirsin -->
+      
+        </div>
+      </div>
+      
+      <!-- Modal + Carousel -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+          <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+  
+              <!-- Resim 1 -->
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/id/200/600" class="d-block w-100" alt="...">
+              </div>
+  
+              <!-- Resim 2 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/201/600" class="d-block w-100" alt="...">
+              </div>
+  
+              <!-- Resim 3 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/202/600" class="d-block w-100" alt="...">
+              </div>
+  
+              <!-- Resim 4 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/203/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 5 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/204/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 6 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/215/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 7 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/206/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 8 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/216/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 9 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/208/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 10 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/209/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 11 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/210/600" class="d-block w-100" alt="...">
+              </div>
+
+              <!-- Resim 12 -->
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/211/600" class="d-block w-100" alt="...">
+              </div>
+  
+            </div>
+  
+            <!-- Oklar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModal" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+        <script>
+            const galleryImages = document.querySelectorAll('.gallery-img');
+            const carousel = new bootstrap.Carousel(document.getElementById('carouselModal'));
+          
+            galleryImages.forEach((img, index) => {
+              img.addEventListener('click', function () {
+                carousel.to(index); // modal açıldığında o resmin index'ine git
+              });
+            });
+          </script>
+</body>
+</html>
